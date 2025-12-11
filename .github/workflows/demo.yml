@@ -8,6 +8,6 @@ jobs:
               run: echo "Hello, my friend!"
             - name: Print several lines
               run: |
-                echo 1st line
-                echo 2nd line
-                echo 3rd line
+                echo "1st line"
+                echo "2nd line"
+                echo "3rd line"
