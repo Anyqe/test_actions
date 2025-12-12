@@ -2,9 +2,9 @@ name: Demo workflow
 on: push
 jobs:
     print:
-       runs-on: ubuntu-latest
+       runs-on: ${{ martix.os }}
        steps:
-            - name: Print greeeting
+            - name: Print greeeting ${{ martix.os }}
               run: echo "Hello, my friend!"
             - name: Print several lines
               run: |
