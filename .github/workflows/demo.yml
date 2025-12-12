@@ -2,12 +2,12 @@ name: Demo workflow
 on: push
 jobs:
     print:
-       runs-on: ${{matrix.os}}
+       runs-on: ${{matrix.oss}}
        strategy:
          matrix:
-           os: [ubuntu-latest, windows-latest]
+           oss: [ubuntu-latest, windows-latest]
        steps:
-         - name: Print greeeting ${{ matrix.os }}
+         - name: Print greeeting ${{ matrix.oss }}
            run: echo "Hello, my friend!"
          - name: Print several lines
            run: |
