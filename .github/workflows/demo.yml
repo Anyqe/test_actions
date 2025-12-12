@@ -3,6 +3,9 @@ on: push
 jobs:
     print:
        runs-on: ${{ martix.os }}
+       strategy:
+         matrix:
+           os: [ubuntu-latest, windows-latest]
        steps:
             - name: Print greeeting ${{ martix.os }}
               run: echo "Hello, my friend!"
